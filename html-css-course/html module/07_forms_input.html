@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forms & Input</title>
+  </head>
+  <body>
+    <!-- Forms -->
+    <form action="/">
+      <div>
+        <!-- Matching the Label's For attribute to the input's ID attribute
+            allows highlighting upon click -->
+
+        <!-- Name -->
+        <label for="name">Name</label>
+        <br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your Name"
+        />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label for="message">Message</label>
+        <br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      </div>
+
+      <!-- Select & Options, and Selected default -->
+      <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="Male">Male</option>
+          <option value="Female" selected>Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Age -->
+      <div>
+        <label for="age">Age</label><br />
+        <input type="number" name="age" id="age" />
+      </div>
+
+      <!-- Date -->
+      <div>
+        <label for="birthdate">Birthdate</label>
+        <br />
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+
+      <!-- Radio & Checked default-->
+      <div>
+        <label for="membership">Membership</label>
+        <br />
+        <input
+          type="radio"
+          name="membership"
+          value="simple"
+          id="membership"
+          checked
+        />Simple
+        <input
+          type="radio"
+          name="membership"
+          value="standard"
+          id="membership"
+        />Standard
+        <input
+          type="radio"
+          name="membership"
+          value="super"
+          id="membership"
+        />Super
+      </div>
+
+      <!-- Checkbox & Checked default -->
+      <div>
+        <label for="likes">I like</label>
+        <br />
+        <input
+          type="checkbox"
+          name="likes"
+          value="bike"
+          id="likes"
+          checked
+        />Bike <input type="checkbox" name="likes" value="car" id="likes" />Car
+        <input type="checkbox" name="likes" value="boat" id="boat" />Super
+      </div>
+
+      <!-- Input Submit -->
+      <input type="submit" value="Submit" />
+
+      <!-- Button Submit -->
+      <!-- <button type="submit">Submit</button> -->
+
+      <!-- Reset the Form -->
+      <button type="reset">Reset Form</button>
+    </form>
+  </body>
+</html>
