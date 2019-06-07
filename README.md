@@ -1,1 +1,1 @@
-# Projects and Learning for my 100DaysOfCode Commitment
+# 100DaysOfCode |  Projects and Learning
