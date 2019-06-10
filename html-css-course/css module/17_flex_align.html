@@ -9,6 +9,12 @@
       #container {
         display: flex;
         justify-content: center;
+        height: 100vh;
+        background-color: #555;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        /* align-content: flex-start; */
       }
 
       .item {
@@ -18,6 +24,18 @@
         text-align: center;
         margin: 0.5rem;
         flex-basis: 300px;
+      }
+
+      .item-1 {
+        order: 3;
+      }
+      .item-2 {
+        align-self: flex-end;
+        order: 2;
+      }
+
+      .item-3 {
+        order: 1;
       }
     </style>
   </head>
