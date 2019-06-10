@@ -54,11 +54,25 @@
   }
 
   #contact {
-    /* flex-direction: column; */
-    display: block;
+    flex-direction: column;
   }
 
-  /* #contact .map {
-    height: 200px;
-  } */
+  #contact .map {
+    min-height: 200px;
+    border-top: 4px solid #333;
+  }
+}
+
+@media (max-height: 568px) {
+  #showcase .showcase-content {
+    margin-top: -2rem;
+    top: 140px;
+  }
+  .l-heading {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
 }
